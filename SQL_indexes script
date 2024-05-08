@@ -108,3 +108,9 @@ INSERT INTO employee (first_name, last_name, department, joining_date) VALUES
 ('Emanueli', 'Lam', 'Finance', '2023-11-14'),
 ('Ruth', 'Nguyen', 'Human Resources', '2024-06-10');
 
+SHOW INDEXES FROM EMPLOYEE;
+
+CREATE INDEX QUICKINDEX
+ON EMPLOYEE(first_name,  department, joining_date);
+
+SHOW INDEXES FROM EMPLOYEE;
