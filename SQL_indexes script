@@ -1,0 +1,9 @@
+create database indexwork;
+show databases; 
+USE  indexwork;
+CREATE TABLE EMPLOYEE (
+    first_name varchar(40) not null,
+    last_name varchar(40) not null,
+    department varchar(40) not null,
+    joining_date date not null
+);
