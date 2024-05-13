@@ -114,3 +114,16 @@ CREATE INDEX QUICKINDEX
 ON EMPLOYEE(first_name,  department, joining_date);
 
 SHOW INDEXES FROM EMPLOYEE;
+
+alter table employee
+drop index quickindex;
+
+CREATE INDEX Lname ON employee (last_name);
+
+
+SELECT
+    *
+FROM
+    employee
+WHERE
+    Last_name="mukunzi";
