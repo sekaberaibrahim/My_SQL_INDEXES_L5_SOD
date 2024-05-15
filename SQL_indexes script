@@ -127,3 +127,7 @@ FROM
     employee
 WHERE
     Last_name="mukunzi";
+
+Renaming Indexes
+.......................
+ALTER TABLE employee RENAME INDEX Lname TO LnLname
