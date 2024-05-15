@@ -130,4 +130,9 @@ WHERE
 
 Renaming Indexes
 .......................
-ALTER TABLE employee RENAME INDEX Lname TO LnLname
+**ALTER TABLE employee RENAME INDEX Lname TO LnLname
+
+If you want to see all indexes across all databases all at once:
+.................................................................
+
+**SELECT * FROM information_schema.statistics;
